@@ -12,14 +12,14 @@ cd into the data-importer directory
 and run 
 ```
 bundle install
-rake db:create 
-rake db:migrate
-rake db:test:prepare
+bundle exec rake db:create 
+bundle exec rake db:migrate
+bundle exec rake db:test:prepare
 ```
 Then run the test suite with 
 
 ```
-rspec
+bundle exec rspec
 ```
 To start the server run:
 ``` 
