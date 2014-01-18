@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Rows </th>
+      <th> Purchases </th>
+      <th> Total Revenue </th>
+      <th> View Details </th>
+    </tr>
+</thead>
+<% @imports.each do |import| %>
+  <tr>
+    <td><%= import.filename %> </td>
+    <td><%= import.rows %> </td>
+    <td><%= import.purchases %> </td>
+    <td><%= import.total_revenue %> </td>
+    <td><%= link_to 'Show', data_import_path(import) %> </td>
+  </tr>
+<% end %>
+  </table>
