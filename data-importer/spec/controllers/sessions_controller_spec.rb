@@ -18,7 +18,7 @@ describe SessionsController do
   end
 
   describe "DELETE 'destroy'" do
-    it "returns http success" do
+    it "redirects to the login page" do
       delete 'destroy'
       response.should redirect_to new_session_path
     end
